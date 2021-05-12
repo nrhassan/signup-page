@@ -9,4 +9,42 @@ body{
     background-size: cover;
     color: white;
     font-family: Poppins;
+    display: grid;
+    grid-template-areas: 'left right';
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 80vh;
 }
+h1{
+    font-size: 40px;
+}
+p{
+    font-size: 16px;
+}
+.left{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    background-color: white;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    background-color: hsl(248, 32%, 49%);
+}
+
+  
