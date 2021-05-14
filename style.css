@@ -9,23 +9,34 @@ body{
     background-size: cover;
     color: white;
     font-family: Poppins;
+    
+}
+.container{
+    height: 100vh;
     display: grid;
     grid-template-areas: 'left right';
     grid-template-columns: 45vw 45vw;
-    grid-template-rows: 80vh;
+    grid-template-rows: 85vh;
+    justify-content: center;
+    align-content: center;
 }
 h1{
-    font-size: 40px;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 20px;
 }
 p{
     font-size: 16px;
 }
 .left{
     grid-area: left;
+    width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 25%;
 }
 .right{
     grid-area: right;
@@ -36,15 +47,89 @@ p{
 }
 .form-container{
     background-color: white;
-    width: auto;
+    width: 75%;
+    height: 72%;
+    border-radius: 10px;
+    box-shadow: 0px 7px 0px hsla(0, 62%, 63%, 0.685);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-div{
+.agreement{
+    color:  hsl(246, 25%, 77%);
+    font-size: x-small;
+}
+.trial{
     background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    box-shadow: 0px 7px 0px hsla(0, 62%, 63%, 0.685);
+    width: 75%;
+    /* height: 30px; */
+    padding: 15px 0px;
+    margin-bottom: 20px;
+    text-align: center;
 }
+.trial p:first-child{
+    display: inline;
+    font-weight: bold;
+}
+.trial p:last-child{
+    display: inline;
+}
+input[type=text] {
+    width: 80%;
+    height: 60px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: solid 1px hsl(246, 25%, 77%);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+  input[type=email] {
+    width: 80%;
+    height: 60px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: solid 1px hsl(246, 25%, 77%);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+  input[type=password] {
+    width: 80%;
+    height: 60px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: solid 1px hsl(246, 25%, 77%);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+  input[type=submit] {
+    width: 80%;
+    height: 50px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: hsl(154, 59%, 51%);
+    border: solid 1px hsl(154, 59%, 51%);
+    border-radius: 5px;
+    box-shadow: 0px 4px 0px hsl(154, 58%, 44%);
+    color: white;
+    font-weight: bold;
+  }
+  a:link{
+      color: hsl(0, 100%, 74%);
+      text-decoration: none;
+      font-weight: 700;
+  }
+  
+  
+  
+  
 
   
