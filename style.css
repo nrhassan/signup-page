@@ -30,13 +30,13 @@ p{
 }
 .left{
     grid-area: left;
-    width: 70%;
+    width: 79%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 25%;
+    margin-left: 10%;
 }
 .right{
     grid-area: right;
@@ -48,13 +48,13 @@ p{
 .form-container{
     background-color: white;
     width: 75%;
-    height: 72%;
+    height: 75%;
     border-radius: 10px;
     box-shadow: 0px 7px 0px hsla(0, 62%, 63%, 0.685);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
@@ -81,9 +81,10 @@ p{
 }
 input[type=text] {
     width: 80%;
-    height: 60px;
+    height: 50px;
     padding: 12px 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    /* margin-bottom: 15px; */
     border: solid 1px hsl(246, 25%, 77%);
     border-radius: 5px;
     box-sizing: border-box;
@@ -91,9 +92,9 @@ input[type=text] {
   }
   input[type=email] {
     width: 80%;
-    height: 60px;
+    height: 50px;
     padding: 12px 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
     border: solid 1px hsl(246, 25%, 77%);
     border-radius: 5px;
     box-sizing: border-box;
@@ -101,9 +102,10 @@ input[type=text] {
   }
   input[type=password] {
     width: 80%;
-    height: 60px;
+    height: 50px;
     padding: 12px 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: solid 1px hsl(246, 25%, 77%);
     border-radius: 5px;
     box-sizing: border-box;
@@ -113,7 +115,7 @@ input[type=text] {
     width: 80%;
     height: 50px;
     padding: 12px 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 15px; */
     box-sizing: border-box;
     background-color: hsl(154, 59%, 51%);
     border: solid 1px hsl(154, 59%, 51%);
@@ -126,6 +128,67 @@ input[type=text] {
       color: hsl(0, 100%, 74%);
       text-decoration: none;
       font-weight: 700;
+  }
+
+  @media screen and (max-width: 375px){
+      *{
+          margin: 0px;
+          padding: 0px;
+      }
+      h1{
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 30px;
+          margin-bottom: 5px;
+      }
+      .container{
+          height: 100vh;
+          display: grid;
+          grid-template-areas: 'left' 'right';
+          grid-template-rows: 30% 70%;
+          grid-template-columns: 100%;
+          justify-content: center;
+          align-content: center;
+
+      }
+      .left{
+          grid-area: left;
+          width: 85%;
+          height: 95%;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          margin-left: 7%;
+          margin-top: 10%;
+      }
+      .right{
+          grid-area: right;
+          width: 95%;
+          height: 95%;
+      }
+      .trial{
+          width: 94%;
+          margin-left: 5%;
+      }
+      .trial p:last-child{
+        display: block;
+    }
+      .form-container{
+          width: 94%;
+          margin-left: 5%;
+      }
+      input[type=submit]{
+          margin-bottom: 0px;
+          height: 45px;
+          
+      }
+      .agreement{
+          width: 70%;
+      }
+
   }
   
   
